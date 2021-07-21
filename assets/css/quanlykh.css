@@ -1,0 +1,195 @@
+aside{
+    width: 13%;
+    position: fixed;
+    height: 100vh;
+    float: left;
+    background-color: #2F353A;
+}
+.header-aside{
+    padding: 10px;
+	text-align: center;
+	background-color: #3A4248;
+	line-height: 60px;
+    border-bottom: 1px solid white;   
+}
+.header-aside__icon{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.header-aside__text{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.header-aside-list{
+	border-bottom: 1px solid white;
+}
+.header-aside-item{
+    line-height: 8vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-aside-item__link{
+	color: white;
+	position: relative;
+	padding-left: 10px;
+	
+	border-left: 3px solid transparent;
+    display: block;
+}
+.header-aside-item__link:hover{
+	background-color: yellowgreen;
+	border-left-color: cyan;
+}
+.header-aside-item__icon{
+    margin-right: 10px;
+}
+.header-aside-item__icon-next{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	font-size: 15px;
+	transform: all .5s;
+}
+.rote{
+	transform: translateY(-50%) rotate(-180deg);
+}
+
+.header-aside-item__link:hover .header-aside-item__icon-next{
+	
+	transition: all .5s;
+	color: cyan;
+}
+/*code phần sub item*/
+
+.sub-menu-list{
+	position: static;
+	display: none;
+}
+.show{
+	display: block;
+}
+.sub-menu-item{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.sub-menu-item__link{
+	color: white;
+	display: block;
+	background-color: #3A4248;
+	padding-left: 10px;
+	border-left: 3px solid transparent;
+}
+.sub-menu-item__link:hover{
+	background-color: yellowgreen;
+	border-left-color: cyan;
+}
+
+/*code phần chân của aside*/
+.aside-footer{
+	margin-top: 20px;
+}
+.aside-footer-text{
+    color: white;
+    margin-left: 10px;
+}
+.aside-footer-text a{
+	color: white;
+}
+.aside-footer-icon{
+    margin-right: 10px;
+}
+
+
+
+
+/*code phần container right*/
+.container{
+    width: 87%;
+    float: right;
+    background-color: #f5f5f5;
+    height: 100vh;
+    padding: 20px;
+}
+.container-wrap{
+    background-color: white;
+    padding: 20px 10px;
+}
+.content-top{
+	display: flex;
+	justify-content: space-between;
+}
+.content-top section{
+	outline: none;
+	text-align: center;
+}
+.input-search{
+	outline: none;
+	padding: 5px;
+}
+/*code phần contain-main*/
+.content-main{
+	margin-top: 30px;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #ccc4c4;
+}
+th{
+	padding: 10px;
+}
+tr td{
+    text-align: center;
+    padding: 10px;
+}
+.masp{
+	color: rgb(54, 54, 6);
+	font-size: 1.1rem;
+}
+.btn-edit{
+	background-color: tomato;
+	outline: none;
+	border:none;
+	color: white;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.btn-delete{
+	background-color: yellowgreen;
+	outline: none;
+	border:none;
+	color: white;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.btn-edit:hover{
+	background-color: rgb(238, 85, 58);
+}
+.btn-delete:hover{
+	background-color: rgb(139, 182, 54);
+}
+
+.content-footer{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.btn-show{
+	padding: 10px;
+	border: none;
+	outline: none;
+	background-color: tomato;
+	border-radius: 3px;
+	color: white;
+}
+.btn-show:hover{
+	background-color: rgb(247, 53, 19);
+	cursor: pointer;
+}
+.btn-show i{
+	margin-right: 5px;
+}

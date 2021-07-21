@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/doitra.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/respon.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"> <!--linh dẫn đến fontawesome để lấy đường dẫn các icon-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>Document</title>
+    <script src="assets/javascript/jquery.min.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!--Column: .col
+        Prefix class:
+            - c - Mobile
+            - m - table
+            - l -PC
+    -->
+    <div class="app">
+        <div class="loader">
+            <span class="fas fa-spinner xoay icon"></span>
+        </div>
+        <header class="header" id="heade">
+            <div class="grid wide">
+                <div class="header__top">
+                    <h3 class="header__top-heading">
+                        Chào mừng bạn đến với hop thú cưng
+                    </h3>
+                    <ul class="header__top-list hide-on-mobile-table">
+                        <li class="header__top-item header__top-item--separete">
+                            <a href="#" class="header__top-item-link">Đăng nhập / Đăng ký</a>
+                        </li>
+                        <li class="header__top-item header__top-item--separete">
+                            <a href="#" class="header__top-item-link">Blog chia sẻ</a>
+                        </li>
+                        <li class="header__top-item header__top-item--separete">
+                            <a href="#" class="header__top-item-link">Khuyến mãi</a>
+                        </li>
+                        <li class="header__top-item header__top-item--separete">
+                            <a href="#" class="header__top-item-link">Tuyển dụng</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href="#" class="header__top-item-link">Chia sẻ</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href="#" class="header__top-item-link" title="Follow on Facebook"><i class="header__top-icon fab fa-facebook-square"></i></a>
+                            <a href="#" class="header__top-item-link" title="Follow on intargam"><i class="header__top-icon fab fa-instagram"></i></a>
+                            <a href="#" class="header__top-item-link" title="Follow on twict"><i class="header__top-icon fab fa-twitter"></i></a>
+                            <a href="#" class="header__top-item-link" title="Send us an Email"><i class="header__top-icon far fa-envelope"></i></a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-with-search">
+                    <label for="nav-mobile-input" class="icon-table">
+                        <i class="fas fa-bars header__search-table-icon"></i>
+                    </label>
+                    <div class="header__search-logo">
+                        <img src="./assets/img/logoshoppet.png" alt="" class="header__search-img">
+                    </div>
+                    <div class="header__search hide-on-mobile-table">
+                        <div class="header__selection">
+                            <h3 class="header__selection-heading">Tất cả danh mục</h3>
+                        </div>
+                        <div class="header__input-warp">
+                            <input type="text" class="header__input" placeholder="Bạn muốn tìm thú nào ?">
+                        </div>
+                        <button class="header__btn header__btn-pc" onclick="search1()">Tìm</button>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <ul class="header__cart-list">
+                                <li class="hide-on-mobile-table header__cart-item header__cart-item-phone header__cart-item--separete"><a href="https://topweb.com.vn/demo/?theme_id=5726" class="header__cart-item-link">HOTLINE: 0965842998</a></li>
+                                <li class="hide-on-mobile-table header__cart-item"><a href="" class="header__cart-item-link"><i class="header__cart-item-icon fas fa-heart"></i></a></li>
+                                <li class="header__cart-item">
+                                    <a href="" class="header__cart-item-link header__cart-item-link--cart">
+                                        <span class="header__cart-item-number"><i class="fas fa-shopping-cart"></i></span>
+                                    </a>
+                                    <div class="header__cart-notify">
+                                        <ul class="header__cart-notify-list" id="lisst">
+                                            <li class="header__cart-notify-item">
+                                                <a href="" class="header__cart-notify-item-link">
+                                                    <img src="http://thucung.hungyenweb.com/wp-content/uploads/2014/08/thu-cung-180x180.jpg" alt="" class="header__cart-img">
+                                                </a>
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">thú cưng dễ thương thú cưng dễ thương </h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <p class="header__cart-item-price">
+                                                                Số lượng: <span id="count-product"><b>1</b></span>
+                                                            </p>
+                                                            <br>
+                                                            <span>Giá:</span>
+                                                            <span class="header__cart-item-qnt">300.000</span>
+                                                            <span>đ</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <i href="" class="header__cart-notify-item-remove">x</i>
+                                            </li>  
+                                            <li class="header__cart-notify-item">
+                                                <a href="" class="header__cart-notify-item-link">
+                                                    <img src="http://thucung.hungyenweb.com/wp-content/uploads/2014/08/thu-cung-180x180.jpg" alt="" class="header__cart-img">
+                                                </a>
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">thú cưng dễ thương</h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <p class="header__cart-item-price">
+                                                                Số lượng: <span id="count-product"><b>1</b></span>
+                                                            </p>
+                                                            <br>
+                                                            <span>Giá:</span>
+                                                            <span class="header__cart-item-qnt">300.000</span>
+                                                            <span>đ</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <i href="" class="header__cart-notify-item-remove">x</i>
+                                            </li>   
+                                            <li class="header__cart-notify-item">
+                                                <a href="" class="header__cart-notify-item-link">
+                                                    <img src="http://thucung.hungyenweb.com/wp-content/uploads/2014/08/thu-cung-180x180.jpg" alt="" class="header__cart-img">
+                                                </a>
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">thú cưng dễ thương thú cưng dễ thương </h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <p class="header__cart-item-price">
+                                                                Số lượng:  <span id="count-product"><b>1</b></span>
+                                                            </p>
+                                                            <br>
+                                                            <span>Giá:</span>
+                                                            <span class="header__cart-item-qnt">300.000</span>
+                                                            <span>đ</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <i href="" class="header__cart-notify-item-remove">x</i>
+                                            </li>   
+                                            
+                                        </ul>
+                                        <div class="header__cart-pays-warp">
+                                            <span class="header__cart-pays">Tạm tính:</span>
+                                            <span class="header__cart-pays-price">1.100.000đ</span>
+                                        </div>
+                                        <!--đây là hàm tính giá tiền thế bh là mik get ra cái kia à dùng for duyệt à uk duyệt theo length của local là đc lấy cái price đợi ae lm thử đừng thoát-->
+                                        <div class="header__cart-button">
+                                            <a href="chitietgiohang.html" class="header__cart-btn-show">xem giỏ hàng</a>
+                                            <a href="" class="header__cart-btn-check">Đặt hàng</a>
+                                        </div>
+                                    </div>
+                                    <!-- <ul class="header__cart-notify">
+                                        <li class="header__cart-notify-item">
+                                            <a href="" class="header__cart-notify-item-link">
+                                                <img src="http://thucung.hungyenweb.com/wp-content/uploads/2014/08/thu-cung-180x180.jpg" alt="" class="header__cart-notify-item-img">
+                                                <span class="header__carrt-notify-text">Thú cưng dễ thương</span>
+                                            </a>
+                                            <span class="header__cart-notify-quantity">
+                                                <span class="header__cart-quantity-number">1 *</span>
+                                                <span class="header__cart-quantity-price">300.000đ</span>
+                                            </span>
+                                        </li>
+                                   </ul>
+                                   <p class="header__cart-pays">
+                                       tạm tính <span class="header__cart-pays-price">300.000đ</span>
+                                   </p>
+                                   <p class="header__cart-btn-warp">
+                                        <a href="" class="header__cart-btn">Xem giỏ hàng</a>
+                                        <a href="" class="header__cart-btn">Đặt hàng</a>
+                                   </p> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__navbar">
+                    <div class="header__navbar-title">
+                        <label for="chekc" class="header__navbar-heading">Danh mục sản phẩm</label>
+                        <input type="checkbox" id="chekc" hidden>
+                        <aside class="header-aside">
+                            <ul class="header-aside__list">
+                                <li class="header-aside__item">
+                                    <a href="chocung.html" class="header-aside__item-link"><img src="./assets/imgicon/icon1.png" alt="" class="header-aside__item-icon">chó cưng</a>
+                                </li>
+                                <li class="header-aside__item">
+                                    <a href="" class="header-aside__item-link"><img src="./assets/imgicon/icon2.png" alt="" class="header-aside__item-icon">Mèo cưng</a>
+                                </li>
+                                <li class="header-aside__item">
+                                    <a href="" class="header-aside__item-link"><img src="./assets/imgicon/icon3.png" alt="" class="header-aside__item-icon">Gặm nhấm</a>
+                                </li>
+                                <li class="header-aside__item">
+                                    <a href="" class="header-aside__item-link"><img src="./assets/imgicon/icon4.png" alt="" class="header-aside__item-icon">Sói cảnh</a>
+                                </li>
+                                <li class="header-aside__item">
+                                    <a href="" class="header-aside__item-link"><img src="./assets/imgicon/icon5.png" alt="" class="header-aside__item-icon">Chuồng nuôi</a>
+                                </li>
+                                <li class="header-aside__item">
+                                    <a href="" class="header-aside__item-link"><img src="./assets/imgicon/icon6.png" alt="" class="header-aside__item-icon">Sản phầm giảm giá</a>
+                                </li>
+                                <li class="header-aside__item">
+                                    <a href="" class="header-aside__item-link"><img src="./assets/imgicon/icon7.png" alt="" class="header-aside__item-icon">Vật dụng thú cưng</a>
+                                </li>
+                                <li class="header-aside__item">
+                                    <a href="" class="header-aside__item-link"><img src="./assets/imgicon/icon8.png" alt="" class="header-aside__item-icon">Tư vấn</a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="Home.html" class="header__navbar-item-link header__navbar-link-color-red">Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">Giới thiệu</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                Shop thú cưng
+                                <div class="header__navbar-item-link-new">
+                                    <span >new</span>
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">Blog chia sẻ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="dichvu.html" class="header__navbar-item-link">
+                                Dịch vụ thú cưng
+                                <div class="header__navbar-item-link-hot">
+                                    <span>hot</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!--code phần mobile-->
+                <input type="checkbox" id="nav-mobile-input">
+                <nav class="navbar-mobile">
+                    <ul class="navbar-mobile__list">
+                        <li class="navbar-mobile__item"><a href="" class="navbar-mobile__item-link">Trang Chủ</a></li>
+                        <li class="navbar-mobile__item"><a href="" class="navbar-mobile__item-link">Giới thiệu</a></li>
+                        <li class="navbar-mobile__item"><a href="" class="navbar-mobile__item-link">Shop thú cưng</a></li>
+                        <li class="navbar-mobile__item"><a href="" class="navbar-mobile__item-link">Blog chia sẻ</a></li>                                       
+                        <li class="navbar-mobile__item"><a href="" class="navbar-mobile__item-link">Dịch vụ thú cưng</a></li>
+                        <li class="navbar-mobile__item"><a href="" class="navbar-mobile__item-link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <label for="nav-mobile-input" class="overlay-table"></label>
+                <div class="header__search-mobile">
+                    <div class="header__selection">
+                        <h3 class="header__selection-heading">Tất cả danh mục</h3>
+                        <ul class="header__selection-list">
+                            <li class="header__selection-item">Tất cả danh mục</li>
+                            <li class="header__selection-item">Chuồng nuôi</li>
+                            <li class="header__selection-item">Dịch vụ thú cưng</li>
+                            <li class="header__selection-item">Gặm nhấm</li>
+                            <li class="header__selection-item">Mèo cưng</li>
+                            <li class="header__selection-item">Sản phẩm giảm giá</li>
+                            <li class="header__selection-item">Sói cảnh</li>
+                            <li class="header__selection-item">Vật dụng thú cưng</li>
+                        </ul>
+                    </div>
+                    <div class="header__input-warp">
+                        <input type="text" class="header__input" placeholder="Bạn muốn tìm thú nào ?">
+                    </div>
+                    <button class="header__btn">Tìm</button>
+                </div>
+            </div>
+        </header>
+        <div class="back-to-top"><i class="fas fa-chevron-up"></i></div>
+        <div class="category-title">
+            <div class="grid wide">
+                <div class="category-title-warp">
+                    <div class="category-title__page">
+                        <span class="category-title__page-home">TRANG CHỦ</span>
+                        <span class="category-title__page-dash">/</span>
+                        <span class="category-title__page-text">CHÍNH SÁCH BẢO MẬT</span>
+                    </div>
+                </div>   
+            </div>
+            
+        </div>
+        <main id="main">
+            <div class="container">
+                <div class="grid wide">
+                    <div class="row">
+                       <div class="col l-12">
+                            <h2>CHÍNH SÁCH ĐỔI TRẢ</h2>
+                            <p>Chính sách đổi trả của Dogily Petshop chỉ áp dụng đối với mặt hàng phụ kiện. Không áp dụng cho bất cứ chủng loại thú cưng vật nuôi nào khác (chó, mèo, chim, cá, bò sát cảnh…).</p>
+                            <p>Chúng tôi luôn mong muốn đem đến cho khách hàng những trải nghiệm mua sắm tốt nhất, các sản phẩm của Dogily Petshop khi gửi đến khách hàng luôn được đảm bảo là hàng mới, còn nguyên đai, nguyên kiện. Đảm bảo chất lượng, đúng với thông tin mô tả và hình ảnh trên trang web Dogily.vn.</p>
+                            <p>Trong trường hợp quý khách nhận được sản phẩm không đúng với mô tả trên trang web. Hoặc sản phẩm phụ kiện bị lỗi do nhà sản xuất, không vừa size. Hay chỉ đơn giản là không còn ưng ý với sản phẩm đã đặt. Quý khách hàng hoàn toàn có thể đổi sang sản phẩm phụ kiện khác trong 7 ngày kể từ thời điểm nhận được hàng.</p>
+                            <h2>QUY ĐỊNH ĐỔI HÀNG</h2>
+                            <p>– Sản phẩm phụ kiện thú cưng được đổi 1 lần duy nhất trong vòng 7 ngày kể từ ngày nhận hàng.</p>
+                            <p>– Sản phẩm phụ kiện khi được đổi phải là sản phẩm chưa qua sử dụng. Không bị dơ bẩn, mất tem, nhãn, mác.</p>
+                            <p>– Sản phẩm phụ kiện thú cưng đổi phải có giá tương đương hoặc cao hơn giá sản phẩm đã mua. Khách hàng sẽ không được hoàn lại tiền thừa trong trường hợp sản phẩm đổi có giá trị thấp hơn sản phẩm mà quý khách đã mua.</p>
+                            <p>– Trong trường hợp phụ kiện thú cưng được đặt trong thời gian diễn ra chương trình khuyến mãi của Dogily Petshop. Quý khách hàng vui lòng đổi sản phẩm trong thời gian diễn ra chương trình để được hưởng mức giá ưu đãi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </main>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12 border">
+                        <div class="footer-introduct">
+                            <h5>GIỚI THIỆU</h5>
+                            <p>
+                                Nội dung giới thiệu cập nhập tại đây. Nội dung giới thiệu cập nhập tại đây,Nội 
+                                dung giới thiệu cập nhập tại đây Nội dung giới thiệu cập nhập tại đây
+                            </p>
+                            <div class="footer-introduct__icon">
+                                <a href="#" class="footer-introduct__icon-link" title="Follow on Facebook"><i class="header__top-icon fab fa-facebook-square"></i></a>
+                                <a href="#" class="footer-introduct__icon-link" title="Follow on intargam"><i class="header__top-icon fab fa-instagram"></i></a>
+                                <a href="#" class="footer-introduct__icon-link" title="Follow on twict"><i class="header__top-icon fab fa-twitter"></i></a>
+                                <a href="#" class="footer-introduct__icon-link" title="Send us an Email"><i class="header__top-icon far fa-envelope"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12 border">
+                        <div class="footer-navbar">
+                            <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                            <ul class="footer-navbar__list">
+                                <li class="footer-navbar__item">
+                                    <a href="huongdanmua.html" class="footer-navbar__item-link"><i class="fas fa-chevron-right footer-navbar__item-icon"></i>Hướng dẫn mua hàng</a>
+                                </li>
+                                <li class="footer-navbar__item">
+                                    <a href="chinhsachgiaohang.html" class="footer-navbar__item-link"><i class="fas fa-chevron-right footer-navbar__item-icon"></i>Chính sách giao hàng</a>
+                                </li>
+                                <li class="footer-navbar__item">
+                                    <a href="doitrasp.html" class="footer-navbar__item-link"><i class="fas fa-chevron-right footer-navbar__item-icon"></i>Đổi trả sản phẩm</a>
+                                </li>
+                                <li class="footer-navbar__item">
+                                    <a href="hinhthucthanhtoan.html" class="footer-navbar__item-link"><i class="fas fa-chevron-right footer-navbar__item-icon"></i>Hình thức thanh toán</a>
+                                </li>
+                                <li class="footer-navbar__item">
+                                    <a href="chinhsachbaomat.html" class="footer-navbar__item-link"><i class="fas fa-chevron-right footer-navbar__item-icon"></i>Chính sách bảo mật</a>
+                                </li>
+                                <li class="footer-navbar__item">
+                                    <a href="" class="footer-navbar__item-link"><i class="fas fa-chevron-right footer-navbar__item-icon"></i>Liên hệ chúng tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12 border">
+                        <div class="footer-hot-search ">
+                            <h5>TỪ KHÓA HOT</h5>
+                            <div class="tagcloud">
+                                <a href="" class="tagcloud-link">Chó cưng</a>
+                                <a href="" class="tagcloud-link">Thú đẹp</a>
+                                <a href="" class="tagcloud-link">Jeans</a>
+                                <a href="" class="tagcloud-link">Thú đẹp</a>
+                                <a href="" class="tagcloud-link">White</a>
+                                <a href="" class="tagcloud-link">Xinh xăn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12 border">
+                        <div class="footer-from">
+                            <h5>ĐĂNG KÝ NHẬN TIN</h5>
+                            <p>Bạn có thể để lại Email, Shop sẽ có những ưu đãi tốt nhất, cũng 
+                                như cập nhập chia sẻ hữu ích và thông tin khuyến mãi mới nhất
+                            </p>
+                            <p class="footer-from__warp">
+                                <span>
+                                    <input type="text" placeholder="chienshop" class="footer-from__input">
+                                </span>
+                                <br>
+                                <input type="submit" value="ĐĂNG KÝ" class="footer-from__submit">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="grid wide">
+                    <p class="footer__text"> 2020 - Bản quyền thuộc về Chiến</p>
+                </div>
+            </div>
+        </footer>  
+    </div>
+    <script src="assets/javascript/main.js"></script>
+</body>
+</html>
+

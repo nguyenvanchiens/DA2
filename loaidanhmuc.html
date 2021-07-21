@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/loaidanhmuc.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/respon.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"> <!--linh dẫn đến fontawesome để lấy đường dẫn các icon-->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="assets/javascript/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="app">
+       <aside>
+            <div class="header-aside">
+                <p class="header-aside__text"><i class="header-aside__icon fas fa-user-shield"></i>ADMIN</p>
+            </div>
+            <ul class="header-aside-list">
+                <li class="header-aside-item">
+                    <a href="admin.html"class="header-aside-item__link"><i class="header-aside-item__icon fas fa-home"></i>Tổng Quan</a>
+                </li>
+                <li class="header-aside-item">
+                    <a href="###"class="header-aside-item__link header-aside-item__link1">
+                        <i class="header-aside-item__icon fas fa-align-justify"></i>
+                        Quản Lý danh mục<i class="header-aside-item__icon-next fas fa-chevron-down"></i>
+                        <ul class="sub-menu-list sub-menu-list1">
+                            <li class="sub-menu-item">
+                                <a href="quanlisp.html" class="sub-menu-item__link">loại danh mục</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="quanlisp.html"  class="sub-menu-item__link">Sản phẩm</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href="quanlisp.html"  class="sub-menu-item__link">Bài viết</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-aside-item">
+                    <a href="##"class="header-aside-item__link header-aside-item__link2"><i class="header-aside-item__icon header-aside-item__icon1  fas fa-archway">
+
+                    </i>Quản Lý Thú Cưng <i class="header-aside-item__icon-next fas fa-chevron-down"></i>
+                    <ul class="sub-menu-list sub-menu-list2">
+                        <li class="sub-menu-item">
+                            <a href="quanlisp.html" class="sub-menu-item__link">Quản lí theo loại</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="quanlisp.html"  class="sub-menu-item__link">Quản lí theo Giá</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href="quanlisp.html"  class="sub-menu-item__link">Quản lí theo mức độ</a>
+                        </li>
+                    </ul>
+                </a>
+                </li>
+                <li class="header-aside-item">
+                    <a href="##"class="header-aside-item__link header-aside-item__link3"><i class="header-aside-item__icon fas fa-user-tie"></i>
+                        Quản Lý Các User <i class="header-aside-item__icon-next 2 fas fa-chevron-down"></i>
+                        <ul class="sub-menu-list sub-menu-list3">
+                            <li class="sub-menu-item">
+                                <a href="" class="sub-menu-item__link">Quản lí theo loại</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href=""  class="sub-menu-item__link">Quản lí theo Giá</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a href=""  class="sub-menu-item__link">Quản lí theo mức độ</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="header-aside-item">
+                    <a href="##"class="header-aside-item__link header-aside-item__link4"><i class="header-aside-item__icon fas fa-users">
+
+                    </i>Quản Lý Phân Phối <i class="header-aside-item__icon-next 3 fas fa-chevron-down"></i>
+                    <ul class="sub-menu-list sub-menu-list4">
+                        <li class="sub-menu-item">
+                            <a href="quanlyncc.html" class="sub-menu-item__link">Quản lí theo loại</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href=""  class="sub-menu-item__link">Quản lí theo Giá</a>
+                        </li>
+                        <li class="sub-menu-item">
+                            <a href=""  class="sub-menu-item__link">Quản lí theo mức độ</a>
+                        </li>
+                    </ul>
+                </a>
+                </li>
+                <li class="header-aside-item">
+                    <a href="quanlikhachhang.html"class="header-aside-item__link"><i class="header-aside-item__icon fas fa-user-tie"></i>Thông Tin Khách Hàng</a>
+                </li>
+                <li class="header-aside-item">
+                    <a href=""class="header-aside-item__link"><i class="header-aside-item__icon fas fa-cogs"></i>Cài Đặt</a>
+                </li>
+            </ul>
+            <div class="aside-footer">
+                <p class="aside-footer-text">
+                   <a href="Home.html"><i class="aside-footer-icon fas fa-arrow-alt-circle-left"></i>Đăng Xuất</a>
+                </p>
+            </div>
+       </aside>
+       <div class="container">
+            <div class="content-top">
+                <div class="content-top-heading">
+                    <h2><i class="fas fa-home"></i>Trang chủ > Danh mục > Loại danh mục</h2>
+                </div>
+            </div>
+
+            <div class="content-major">
+                <div class="content-major-left">
+                    <select name="">
+                        <option value="Tác vụ">Tác vụ</option>
+                        <option value="Tác vụ">Tác vụ</option>
+                        <option value="Tác vụ">Tác vụ</option>
+                    </select>
+                    <div class="content-major-input">
+                        <input type="text" name="" placeholder="Tìm kiếm" class="input-major">
+                    </div>
+                    <select name="">
+                        <option value="Tác vụ">Tìm theo</option>
+                        <option value="Tác vụ">Tác vụ</option>
+                        <option value="Tác vụ">Tác vụ</option>
+                    </select>
+                    <select name="">
+                        <option value="Tác vụ">Số hiển thị</option>
+                        <option value="Tác vụ">Tác vụ</option>
+                        <option value="Tác vụ">Tác vụ</option>
+                    </select>
+                </div>
+                <div class="content-major-right">
+                    <button type="button" class="btn-add-category"><i class="fas fa-plus"></i>Thêm Mới</button>
+                </div>
+            </div>
+            <div class="form-wrap">
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Danh mục</th>
+                        <th>Hình ảnh</th>
+                        <th>Module</th>
+                        <th>Trang chủ</th>
+                        <th>Danh mục</th>
+                        <th>Hiển thị</th>
+                        <th>Tác vụ</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Giới Thiệu</td>
+                        <td></td>
+                        <td>Bài viết</td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><i class="far fa-edit"></i><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sản phẩm</td>
+                        <td></td>
+                        <td>Sản phẩm</td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><i class="far fa-edit"></i><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Thú cưng mới</td>
+                        <td></td>
+                        <td>Sản phẩm</td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><i class="far fa-edit"></i><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Đồ dùng mới</td>
+                        <td></td>
+                        <td>Sản phẩm</td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><i class="far fa-edit"></i><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Tin tức</td>
+                        <td></td>
+                        <td>Bài viết</td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><i class="far fa-edit"></i><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Mèo cảnh</td>
+                        <td></td>
+                        <td>Sản phẩm</td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><i class="far fa-edit"></i><i class="far fa-trash-alt"></i></td>
+                    </tr>
+                </table>
+            </div>
+            
+       </div>
+    </div>
+    <script src="assets/javascript/admin.js"></script>
+</body>
+</html>

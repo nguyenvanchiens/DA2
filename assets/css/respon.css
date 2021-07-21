@@ -1,0 +1,350 @@
+@media only screen and (max-width:1024px){
+    .hide-on-mobile-pc{
+        display: none;
+    }
+   
+}
+  
+/*Mobile & table*/
+@media only screen and (max-width:1023px){
+    .hide-on-mobile-table{
+        display: none;
+    }
+    .header{
+        --header-height:180px;
+        background-color: white;
+    }
+    .header__top-heading{
+        width: 100%;
+        text-align: center;
+    }
+   .header-with-search{
+       display: flex;
+       justify-content: space-between;
+   }
+   .header__cart{
+       width: unset;
+   }
+   .header__navbar{
+       display: none;
+   }
+   #slide{
+       width: 100%;
+   }
+   .icon-table{
+       display: block;
+   }
+   .header__search-mobile{
+       display: flex;
+   }
+   .section-favourite-pet-img{
+       padding: 0 50px;
+   }
+   .section-category-title-mobile{
+    display: block;
+    }
+
+    /* code phần chó cưng*/
+    .category-title-warp{
+        display: block;
+        text-align: center;
+        line-height: 30px;
+    }
+    .category-title__right{
+        display: block;
+        text-align: center;
+    }
+    .category-title__right-selection{
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .category-title__right-text-table{
+        display: block;
+    }
+    /*code phần trang chó cưng*/
+   .category-product__img{
+     object-fit: contain;
+    }
+    .category-product__view{
+        top: 70.5%;
+    }
+    .product-container{
+        text-align: center;
+    }
+    
+}
+   
+
+/*Table*/
+@media only screen and (min-width:740) and (max-width:1023px){
+    .hide-on-table{
+        display: none;
+    }
+    .input-val{
+        display: block;
+        width: 200px;
+    }
+   
+    
+}
+
+/* Mobile*/
+@media only screen and (max-width:740px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .header-with-search{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar-mobile{
+        width: 50%;
+    }
+    .navbar-mobile__item{
+        padding: 2px;
+    }
+    .header__search-mobile{  
+        margin: 0 10px 0 10px;
+    }
+    .header-with-search{
+        display: flex;
+        justify-content: space-around;
+    }
+    .header__search-mobile{
+        display: flex;
+        position: unset;
+    }
+    .product-dog-item__view{
+        top: 49%;
+    }
+    .feedback-left{
+        overflow: hidden;
+    }
+    .section-category-title-mobile{
+        display: block;
+    }
+
+    /* code phần trang chó cưng*/
+    .category-product__view{
+        top: 74.5%;
+    }
+}
+/*iphone 5*/
+
+
+@media only screen and (max-width: 1024px) {
+    .bannner-img{
+        padding: 22px;
+    }
+    .product-item__view{
+        top: 43%;
+    }
+    .product-cat-item__view{
+        top: 40.5%;
+    }
+    .product-Hedgehog-item__view{
+        top: 40.5%;
+    }
+    .product-belongings-item__view{
+        top: 41%;
+    }
+    .detail{
+        top: 10%;
+        left: 0.5%;
+    }
+}
+@media only screen and (max-width: 1023px){
+    .img-title{
+        display: none;
+    }
+    .img-wrap{
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 780px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .product-item__view{
+        top: 51%;
+    }
+    .product-cat-item__view{
+        top: 51%;
+    }
+    .product-Hedgehog-item__view{
+        top: 51%;
+    }
+    .product-belongings-item__view{
+        top: 51%;
+    }
+    .detail{
+        top: 10%;
+        left: 0%;
+    }
+    .add{
+        justify-content: space-between;
+    }
+    .buying{
+        width: 100px;
+    }
+    .detail-img img{
+        width: 350px;
+        height: 350px;
+    }
+    .form-input-group{
+        display: block;
+    }
+    .input-val{
+        width: 100%;
+    }
+    
+   
+}
+
+@media only screen and (max-width: 720px) {
+
+}
+
+@media only screen and (max-width: 640px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    .product-item__view{
+        top: 61%;
+    }
+    .product-cat-item__view{
+        top: 61%;
+    }
+    .product-belongings-item__view{
+        top: 61%;
+    }
+    .section-category-title-mobile{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+
+}
+
+@media only screen and (max-width: 563px) {
+
+}
+
+@media only screen and (max-width: 549px) {
+
+}
+
+@media only screen and (max-width: 534px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 414px) {
+    .product-item__view{
+        top: 50%;
+    }
+    .product-cat-item__view{
+        top: 50%;
+    }
+    .product-belongings-item__view{
+        top: 50%;
+    }
+    .section-category-title-mobile{
+        display: block;
+    }
+     /* code phần trang web chó cưng*/
+     .category-product__view{
+        top: 65.5%;
+    }
+    .header__search-history-item__link img{
+        width: 46px;
+    }
+    .header__search-history-item-head{
+        line-height: 2vh;
+        font-size: 0.7rem;
+    }
+    .product-item__rating-history{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .product-item__view{
+        top: 48%;
+    }
+    .product-cat-item__view{
+        top: 47%;
+    }
+    .product-Hedgehog-item__view{
+        top: 46.5%;
+    }
+    .product-belongings-item__view{
+        top: 46.5%;
+    }
+    .section-category-title-mobile{
+        display: block;
+    }
+    /* code phần trang web chó cưng*/
+    .category-product__view{
+        top: 55.5%;
+    }
+    .header__search-history-item__link img{
+        width: 46px;
+    }
+    .header__search-history-item-head{
+        line-height: 2vh;
+        font-size: 0.7rem;
+    }
+    .product-item__rating-history{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .product-item__view{
+        top: 35%;
+    }
+    .product-belongings-item__view{
+        top: 37.5%;
+    }
+    .section-category-title-mobile{
+        display: block;
+    }
+    /* code phần trang web chó cưng*/
+    .category-product__view{
+        top: 50.5%;
+    }
+    .add-cart{
+        left: 50px;
+        position: relative;
+        top: 49px;
+    }
+    .header__search-history-item__link img{
+        width: 30px;
+    }
+    .header__search-history-item-head{
+        line-height: 2vh;
+        font-size: 0.4rem;
+    }
+    .product-item__rating-history{
+        font-size: 0.4rem;
+    }
+}
+
